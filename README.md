@@ -17,13 +17,4 @@ Authors worth reviewing: [Michael W. Pfaffl](http://www.researchgate.net/profile
 * [Accurate Normalization of qPCR by geometric averaging of multiple internal controls](http://genomebiology.com/2002/3/7/research/0034/ "GeNorm") - Selection of and Normalization math around reference assay selection for qPCR.  This addresses why multiple stable internal controls are better than one, and provides all of the equations necessary to perform the calculations.
 * [A new mathematical model for relative quantification in real-time RT–PCR](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55695/ "Pfaffl Method") - Pfaffl's elaboration on PCR normalization math and efficiency correction.  This is a precursor to the qBase+ methods referenced above.  Pfaffl does a great job explaining the reasoning behind the math while qBase is a great consolidation of the equations needed.
 
-###Convert Array to Hydrolysis Probe Assays
 
-1. Generate List of significantly associated microarray probes
-2. Supply the list of probe IDs to Life Tech's [Assay Selection Tool](https://www.lifetechnologies.com/us/en/home/life-science/pcr/real-time-pcr/real-time-pcr-assays.html "Assay Selection")
-3. Check assays selected against transcripts of interest from the array probe IDs.  Match amplicon/hydrolysis probe location with microarray probe location where possible.
-
-###Convert Array to SYBR Assays
-
-
-###Primer Design
