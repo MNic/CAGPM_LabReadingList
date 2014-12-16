@@ -18,3 +18,6 @@ Authors worth reviewing: [Michael W. Pfaffl](http://www.researchgate.net/profile
 * [A new mathematical model for relative quantification in real-time RT–PCR](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55695/ "Pfaffl Method") - Pfaffl's elaboration on PCR normalization math and efficiency correction.  This is a precursor to the qBase+ methods referenced above.  Pfaffl does a great job explaining the reasoning behind the math while qBase is a great consolidation of the equations needed.
 
 
+####Links
+* [Array Conversion to PCR](https://github.com/MNic/CAGPM_LabReadingList/blob/master/ArraytoPCR/ArraytoPCR.md "ArrayConvert")
+* [Primer Design](https://github.com/MNic/CAGPM_LabReadingList/blob/master/PrimerDesign/PrimerDesign.md "Primer Design")
