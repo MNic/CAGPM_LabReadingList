@@ -33,7 +33,7 @@ Receiving Oligos
 ###Selection
 
 1. Select Targets of Interest:
-	* Targets are typically provided from other experiments (downsizing from Microarray or mRNASeq), other investigators, or area-of-interest specific literature.  When introduced to a new target of interest be sure to take note of the Gene name (Runt-related transcription factor 1), Gene ID (861), Official Symbol (RUNX1), Oraganism and 'Also Known As' from NCBI's GenBank.  Other names for a transcript can help in literature searches for previously successful experiments.
+	* Targets are typically provided from other experiments (downsizing from Microarray or mRNASeq), other investigators, or area-of-interest specific literature.  When introduced to a new target of interest be sure to take note of the Gene name (Runt-related transcription factor 1), Gene ID (861), Official Symbol (RUNX1), Organism and 'Also Known As' from NCBI's GenBank.  Other names for a transcript can help in literature searches for previously successful experiments.
 	
 2. Explore the Gene/Transcript:  
 	* UCSC and Ensembl are great for this.  Take note of the structure of the gene, 
