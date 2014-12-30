@@ -79,8 +79,12 @@ Receiving Oligos
 	   
 	   - Navigate to Primer3Plus and paste the selected region into the text box labeled "Paste source sequence below".
 	   - Setup Primer3Plus:
+	   		* Under 'Task:' - Select <code>Detection</code>
 	   		* Navigate to General Settings - Select the appropriate Mispriming Library (typically Human for us)
 			* Under 'Please select special settings here:' choose qPCR.  Click <code>Activate Settings</code>
 				- This optimizes Primer3Plus' settings for qPCR primer pair selection.
-				* If also selecting an internal Oligo (Probe), navigate to the Internal Oligo tab and set the 'Hyb Oligo Mishyb Library' to the appropriate Mispriming Library (typically Human for us)
-	
+				* If also selecting an internal Oligo (Probe), navigate to the Internal Oligo tab and set the 'Hyb Oligo Mishyb Library' to the appropriate Mispriming Library (typically Human for us).
+			* Click <code>Pick Primers</code>
+			* Review Results
+
+
