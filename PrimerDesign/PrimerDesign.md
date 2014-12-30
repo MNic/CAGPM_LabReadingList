@@ -80,4 +80,7 @@ Receiving Oligos
 	   - Navigate to Primer3Plus and paste the selected region into the text box labeled "Paste source sequence below".
 	   - Setup Primer3Plus:
 	   		* Navigate to General Settings - Select the appropriate Mispriming Library (typically Human for us)
-			* Change 'Product Size Ranges' to match desired amplicon size.  Typically 60-150 bases.
+			* Under 'Please select special settings here:' choose qPCR.  Click <code>Activate Settings</code>
+				- This optimizes Primer3Plus' settings for qPCR primer pair selection.
+				* If also selecting an internal Oligo (Probe), navigate to the Internal Oligo tab and set the 'Hyb Oligo Mishyb Library' to the appropriate Mispriming Library (typically Human for us)
+	
