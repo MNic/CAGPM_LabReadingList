@@ -48,7 +48,7 @@ Receiving Oligos
 			- Ex4-5 is unique to the truncated isoform
 			- At this level the 3rd transcript appears to have no unique properties differentiating it from the other two transcripts.
 			- Also worth noting, exons 3-6 are shared by all isoforms.  Amplifying any of these should yield combined results for all isoforms.
-		* Are there any unique, potentially complicating properties of the transcript (see [MYL9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&position=chr20%3A35161547-35186566&hgsid=400289563_IQQWwCeeSlqllGDWh7dsybaGOKZm "MYL9")
+		* Are there any unique, potentially complicating properties of the transcript (see [MYL9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&position=chr20%3A35161547-35186566&hgsid=400289563_IQQWwCeeSlqllGDWh7dsybaGOKZm "MYL9"))
 
 3. Choose region(s) on target to amplify:
 	* Identifying regions of interest is a fairly simple decision tree.  An assay developed where one primer spans the junction between two exons is prefered above all other arrangements.  This is followed closely by any assay having each primer in adjacent exons spanning the junction.  Finally having both primers within the same exon is used as a last resort.
@@ -63,8 +63,21 @@ Receiving Oligos
 		- Select regions around the differentiating junctions and pull their cDNA sequence from [Ensembl](http://useast.ensembl.org/index.html "Ensembl"):
 			* [RUNX1 transcript variant 1 - Exons](http://useast.ensembl.org/Homo_sapiens/Transcript/Exons?db=core;g=ENSG00000159216;r=21:34787801-36004667;t=ENST00000437180) Note the nomenclature difference between UCSC Genome Browser and Ensembl.  There will be ambiguities like these that will require more investigation to get correct.  Ensembl has provided a link to the RefSeq NM_001754 for the long transcript.  So we'll choose to use RUNX1-201 over RUNX1-002 in this scenario.
 			* The linked Exon page provides the sequences of each exon (Capital letters) with the beginning and end of each intron (lowercase letters).  Untranslated regions are indicated in Blue while translated are black.  RNA should contain both blue and black capital letters; but selection of translated regions is generally preferred unless there's an experimental or technical reason to favor untranslated.
+	* For Amplification:
+		- [RUNX1 transcript variant 1](http://genome.ucsc.edu/cgi-bin/hgc?hgsid=400289563_IQQWwCeeSlqllGDWh7dsybaGOKZm&c=chr21&o=36160097&t=36421595&g=refGene&i=NM_001754) Ex1-2 Junction
+		- [RUNX1 transcript variant 3](http://genome.ucsc.edu/cgi-bin/hgc?hgsid=400289563_IQQWwCeeSlqllGDWh7dsybaGOKZm&c=chr21&o=36193573&t=36260987&g=refGene&i=NM_001122607) Ex4-5 Junction
+		- [All RUNX1 Isoforms](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&position=chr21%3A36054043-36508047&hgsid=400289563_IQQWwCeeSlqllGDWh7dsybaGOKZm "RUNX1") Ex4-5 of Long Isoform
+		- Note that Exon numbers are relative to each transcript.  Exon 4-5 of variant 1 is different from Exon 4-5 of variant 3.
 
-
+4. Find best Forward Primer, Reverse Primer, and (if needed) Probe locations:
+	* Using Exon junctions chosen above; navigate back to Ensembl's Exon junctions for [RUNX1 transcript variant 1 - Exons](http://useast.ensembl.org/Homo_sapiens/Transcript/Exons?db=core;g=ENSG00000159216;r=21:34787801-36004667;t=ENST00000437180).  Select a 200-300 base region around the exon junction of interest.  In the event that an exon is small, this may require the inclusion of multiple other exons to reach 200-300 bases.  In the example below '-' indicates an exon junction
 	
-	
-
+		* CTTTGGGCCTCATAAACAACCACAGAACCACAAGTTGGGTAGCCTGGCAGTGTCAGAAGT       
+       CTGAACCCAGCATAGTGGTCAGCAGGCAGGACGAATCACACTGAATGCAAACCACAGGGT       
+       TTCGCAGCGTG - GTAAAAGAAATCATTGAGTCCCCCGCCTTCAGAAGAGGGTGCATTTTCAGGAGGAAGCGA       
+       TGGCTTCAGACAGCATATTTGAGTCATTTCCTTCGTACCCACAGTGCTTCATGAGAG - AATGCATACTTGGAATGAATCCTTCTAGAGACGTCCACG
+	   
+	   - Navigate to Primer3Plus and paste the selected region into the text box labeled "Paste source sequence below".
+	   - Setup Primer3Plus:
+	   		* Navigate to General Settings - Select the appropriate Mispriming Library (typically Human for us)
+			* Change 'Product Size Ranges' to match desired amplicon size.  Typically 60-150 bases.
